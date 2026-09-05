@@ -13,7 +13,16 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        // Create an array to be populated        
+        double[] multiples = new double[length];
+        // Create a for loop to iterate the multipliers
+        for (int i = 0; i != length; i++)
+        {
+            // populate the array with the results
+            multiples[i] = (i + 1) * number;
+        }
+        // get the resulting array
+        return multiples; 
     }
 
     /// <summary>
